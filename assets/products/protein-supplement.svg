@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400" role="img" aria-labelledby="t">
+  <title id="t">Protein supplement tub</title>
+  <rect width="400" height="400" fill="#FBF1DF"/>
+  <circle cx="200" cy="192" r="146" fill="#F3E2C4"/>
+  <ellipse cx="200" cy="96" rx="86" ry="26" fill="#C98A2B"/>
+  <rect x="114" y="96" width="172" height="34" fill="#C98A2B"/>
+  <ellipse cx="200" cy="130" rx="86" ry="26" fill="#FFFFFF" stroke="#33363F" stroke-width="5"/>
+  <ellipse cx="200" cy="130" rx="86" ry="26" fill="none" stroke="#33363F" stroke-width="5"/>
+  <path d="M114 130c0 14 38 26 86 26s86-12 86-26v134c0 15-38 26-86 26s-86-11-86-26z" fill="#FFFFFF" stroke="#33363F" stroke-width="5"/>
+  <path d="M114 200c0 14 38 26 86 26s86-12 86-26v64c0 15-38 26-86 26s-86-11-86-26z" fill="#C98A2B" opacity="0.14"/>
+  <path d="M114 130c0 14 38 26 86 26s86-12 86-26v134c0 15-38 26-86 26s-86-11-86-26z" fill="none" stroke="#33363F" stroke-width="5"/>
+  <g transform="translate(200 244)">
+    <circle cx="0" cy="0" r="30" fill="#FFFFFF" stroke="#C98A2B" stroke-width="4"/>
+    <text x="0" y="10" font-family="Hind, Arial, sans-serif" font-size="26" font-weight="700" fill="#C98A2B" text-anchor="middle">P</text>
+  </g>
+  <rect x="46" y="286" width="308" height="36" rx="18" fill="#C98A2B"/>
+  <text x="200" y="311" font-family="Hind, Arial, sans-serif" font-size="20" font-weight="700" fill="#FFFFFF" text-anchor="middle">PROTEIN 400g</text>
+</svg>

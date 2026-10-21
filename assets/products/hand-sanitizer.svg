@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400" role="img" aria-labelledby="t">
+  <title id="t">Hand sanitizer bottle</title>
+  <rect width="400" height="400" fill="#E6ECF5"/>
+  <circle cx="200" cy="192" r="146" fill="#D3DEEE"/>
+  <rect x="172" y="66" width="56" height="36" rx="8" fill="#1F3A63"/>
+  <path d="M164 112c0-12 10-22 22-22h28c12 0 22 10 22 22v14h-72z" fill="#1F3A63"/>
+  <path d="M130 136c0-13 10-23 23-23h94c13 0 23 10 23 23v146c0 15-12 27-27 27h-86c-15 0-27-12-27-27z" fill="#FFFFFF" stroke="#33363F" stroke-width="5"/>
+  <path d="M130 210h140v72c0 15-12 27-27 27h-86c-15 0-27-12-27-27z" fill="#1F3A63" opacity="0.14"/>
+  <path d="M130 136c0-13 10-23 23-23h94c13 0 23 10 23 23v146c0 15-12 27-27 27h-86c-15 0-27-12-27-27z" fill="none" stroke="#33363F" stroke-width="5"/>
+  <path d="M130 210h140" stroke="#33363F" stroke-width="5"/>
+  <g transform="translate(200 168)">
+    <path d="M-4-30h8v18h-8z" fill="#1F3A63"/>
+    <path d="M0-14c14 16 22 25 22 34a22 22 0 0 1-44 0c0-9 8-18 22-34z" fill="#1F3A63"/>
+  </g>
+  <g transform="translate(200 248)">
+    <circle cx="0" cy="0" r="22" fill="#FFFFFF" stroke="#1F3A63" stroke-width="4"/>
+    <path d="M-8 1l6 6 12-13" fill="none" stroke="#2CA89C" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <rect x="58" y="286" width="284" height="36" rx="18" fill="#1F3A63"/>
+  <text x="200" y="311" font-family="Hind, Arial, sans-serif" font-size="20" font-weight="700" fill="#FFFFFF" text-anchor="middle">HAND SANITIZER</text>
+</svg>

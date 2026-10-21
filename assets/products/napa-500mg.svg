@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400" role="img" aria-labelledby="t">
+  <title id="t">Napa 500mg — paracetamol tablet strip</title>
+  <rect width="400" height="400" fill="#FDEAE8"/>
+  <circle cx="200" cy="192" r="146" fill="#F8D9D6"/>
+  <g transform="rotate(-16 200 200)">
+    <rect x="70" y="144" width="260" height="110" rx="22" fill="#FFFFFF" stroke="#E2231A" stroke-width="5"/>
+    <g fill="#FFFFFF" stroke="#33363F" stroke-width="4">
+      <circle cx="120" cy="199" r="27"/>
+      <circle cx="178" cy="199" r="27"/>
+      <circle cx="236" cy="199" r="27"/>
+      <circle cx="292" cy="199" r="27"/>
+    </g>
+    <g stroke="#E2231A" stroke-width="5" stroke-linecap="round">
+      <path d="M120 179v40"/>
+      <path d="M178 179v40"/>
+      <path d="M236 179v40"/>
+      <path d="M292 179v40"/>
+    </g>
+  </g>
+  <rect x="92" y="286" width="216" height="36" rx="18" fill="#E2231A"/>
+  <text x="200" y="311" font-family="Hind, Arial, sans-serif" font-size="20" font-weight="700" fill="#FFFFFF" text-anchor="middle">NAPA 500mg</text>
+</svg>

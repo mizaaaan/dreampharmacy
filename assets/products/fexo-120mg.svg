@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400" role="img" aria-labelledby="t">
+  <title id="t">Fexo 120mg — fexofenadine tablet strip</title>
+  <rect width="400" height="400" fill="#FDEAE8"/>
+  <circle cx="200" cy="192" r="146" fill="#F8D9D6"/>
+  <g transform="rotate(-12 200 200)">
+    <rect x="66" y="140" width="268" height="112" rx="20" fill="#FFFFFF" stroke="#33363F" stroke-width="5"/>
+    <g fill="#FFFFFF" stroke="#33363F" stroke-width="4">
+      <circle cx="116" cy="196" r="26"/>
+      <circle cx="176" cy="196" r="26"/>
+      <circle cx="236" cy="196" r="26"/>
+      <circle cx="296" cy="196" r="26"/>
+    </g>
+    <g fill="none" stroke="#33363F" stroke-width="4" stroke-linecap="round">
+      <path d="M116 186c0 12 9 20 20 20"/>
+      <path d="M176 186c0 12 9 20 20 20"/>
+      <path d="M236 186c0 12 9 20 20 20"/>
+      <path d="M296 186c0 12 9 20 20 20"/>
+    </g>
+    <g fill="none" stroke="#E2231A" stroke-width="4" stroke-linecap="round">
+      <path d="M106 188h20"/>
+      <path d="M166 188h20"/>
+      <path d="M226 188h20"/>
+      <path d="M286 188h20"/>
+    </g>
+  </g>
+  <rect x="86" y="286" width="228" height="36" rx="18" fill="#E2231A"/>
+  <text x="200" y="311" font-family="Hind, Arial, sans-serif" font-size="20" font-weight="700" fill="#FFFFFF" text-anchor="middle">FEXO 120mg</text>
+</svg>

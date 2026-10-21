@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400" role="img" aria-labelledby="t">
+  <title id="t">Surgical face mask box</title>
+  <rect width="400" height="400" fill="#E6ECF5"/>
+  <circle cx="200" cy="192" r="146" fill="#D3DEEE"/>
+  <g transform="rotate(-10 200 190)">
+    <path d="M92 96h216c10 0 18 8 18 18v150c0 10-8 18-18 18H92c-10 0-18-8-18-18V114c0-10 8-18 18-18z" fill="#FFFFFF" stroke="#33363F" stroke-width="5"/>
+    <path d="M74 96h252v46H74z" fill="#1F3A63"/>
+    <path d="M74 96h252v46H74z" fill="none" stroke="#33363F" stroke-width="5"/>
+    <text x="200" y="126" font-family="Hind, Arial, sans-serif" font-size="21" font-weight="700" fill="#FFFFFF" text-anchor="middle">FACE MASK</text>
+    <g transform="translate(200 210)">
+      <path d="M-64-40c-8-8-18-12-26-8-6 3-6 11 0 16l10 8v56l-10 8c-6 5-6 13 0 16 8 4 18 0 26-8z" fill="#FFFFFF" stroke="#33363F" stroke-width="4"/>
+      <path d="M64-40c8-8 18-12 26-8 6 3 6 11 0 16l-10 8v56l10 8c6 5 6 13 0 16-8 4-18 0-26-8z" fill="#FFFFFF" stroke="#33363F" stroke-width="4"/>
+      <path d="M-64-42h128v92h-128z" fill="#FFFFFF" stroke="#33363F" stroke-width="4"/>
+      <g stroke="#1F3A63" stroke-width="3" stroke-linecap="round">
+        <path d="M-54-24h108"/><path d="M-54-4h108"/><path d="M-54 16h108"/><path d="M-54 36h108"/>
+      </g>
+    </g>
+  </g>
+  <rect x="58" y="286" width="284" height="36" rx="18" fill="#1F3A63"/>
+  <text x="200" y="311" font-family="Hind, Arial, sans-serif" font-size="20" font-weight="700" fill="#FFFFFF" text-anchor="middle">SURGICAL MASK (50)</text>
+</svg>

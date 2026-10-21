@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400" role="img" aria-labelledby="t">
+  <title id="t">Glucometer with test strips</title>
+  <rect width="400" height="400" fill="#ECEEF4"/>
+  <circle cx="200" cy="192" r="146" fill="#DFE2EB"/>
+  <g transform="rotate(-10 160 190)">
+    <rect x="104" y="92" width="150" height="196" rx="20" fill="#FFFFFF" stroke="#33363F" stroke-width="5"/>
+    <rect x="126" y="116" width="106" height="66" rx="8" fill="#E8EAEF" stroke="#33363F" stroke-width="4"/>
+    <text x="179" y="146" font-family="JetBrains Mono, monospace" font-size="24" font-weight="700" fill="#B81811" text-anchor="middle">6.2</text>
+    <text x="179" y="170" font-family="JetBrains Mono, monospace" font-size="14" fill="#5B5F6B" text-anchor="middle">mmol/L</text>
+    <circle cx="179" cy="220" r="17" fill="#E2231A"/>
+    <rect x="152" y="252" width="54" height="16" rx="8" fill="#33363F"/>
+  </g>
+  <g transform="rotate(12 300 150)">
+    <rect x="266" y="72" width="46" height="150" rx="8" fill="#FFFFFF" stroke="#33363F" stroke-width="4"/>
+    <rect x="272" y="80" width="34" height="30" rx="6" fill="#2CA89C"/>
+    <rect x="272" y="118" width="34" height="26" rx="6" fill="#5B5F6B"/>
+    <rect x="272" y="152" width="34" height="26" rx="6" fill="#2CA89C"/>
+    <rect x="272" y="186" width="34" height="26" rx="6" fill="#5B5F6B"/>
+  </g>
+  <rect x="66" y="286" width="268" height="36" rx="18" fill="#33363F"/>
+  <text x="200" y="311" font-family="Hind, Arial, sans-serif" font-size="20" font-weight="700" fill="#FFFFFF" text-anchor="middle">GLUCOMETER + STRIPS</text>
+</svg>

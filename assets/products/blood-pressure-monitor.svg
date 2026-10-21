@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400" role="img" aria-labelledby="t">
+  <title id="t">Digital blood pressure monitor</title>
+  <rect width="400" height="400" fill="#ECEEF4"/>
+  <circle cx="200" cy="192" r="146" fill="#DFE2EB"/>
+  <g transform="rotate(-8 200 190)">
+    <rect x="96" y="100" width="208" height="164" rx="22" fill="#FFFFFF" stroke="#33363F" stroke-width="5"/>
+    <rect x="122" y="126" width="156" height="80" rx="10" fill="#E8EAEF" stroke="#33363F" stroke-width="4"/>
+    <text x="200" y="166" font-family="JetBrains Mono, monospace" font-size="26" font-weight="700" fill="#B81811" text-anchor="middle">120/80</text>
+    <text x="200" y="192" font-family="JetBrains Mono, monospace" font-size="16" fill="#5B5F6B" text-anchor="middle">mmHg</text>
+    <circle cx="150" cy="234" r="16" fill="#2CA89C"/>
+    <circle cx="200" cy="234" r="16" fill="#E2231A"/>
+    <circle cx="250" cy="234" r="16" fill="#5B5F6B"/>
+    <rect x="292" y="140" width="26" height="104" rx="13" fill="#33363F"/>
+    <path d="M318 190c34 0 34 44 0 44" fill="none" stroke="#33363F" stroke-width="10" stroke-linecap="round"/>
+  </g>
+  <rect x="58" y="286" width="284" height="36" rx="18" fill="#33363F"/>
+  <text x="200" y="311" font-family="Hind, Arial, sans-serif" font-size="20" font-weight="700" fill="#FFFFFF" text-anchor="middle">BLOOD PRESSURE MONITOR</text>
+</svg>

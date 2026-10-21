@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400" role="img" aria-labelledby="t">
+  <title id="t">Multivitamin tablets bottle</title>
+  <rect width="400" height="400" fill="#FBF1DF"/>
+  <circle cx="200" cy="192" r="146" fill="#F3E2C4"/>
+  <rect x="160" y="66" width="80" height="32" rx="8" fill="#C98A2B"/>
+  <path d="M146 108c0-12 10-22 22-22h64c12 0 22 10 22 22v14h-108z" fill="#C98A2B"/>
+  <path d="M122 130c0-13 10-23 23-23h110c13 0 23 10 23 23v146c0 15-12 27-27 27h-102c-15 0-27-12-27-27z" fill="#FFFFFF" stroke="#33363F" stroke-width="5"/>
+  <path d="M122 196h156v80c0 15-12 27-27 27h-102c-15 0-27-12-27-27z" fill="#C98A2B" opacity="0.16"/>
+  <path d="M122 130c0-13 10-23 23-23h110c13 0 23 10 23 23v146c0 15-12 27-27 27h-102c-15 0-27-12-27-27z" fill="none" stroke="#33363F" stroke-width="5"/>
+  <path d="M122 196h156" stroke="#33363F" stroke-width="5"/>
+  <g transform="translate(200 240)">
+    <circle cx="0" cy="0" r="26" fill="#FFFFFF" stroke="#C98A2B" stroke-width="4"/>
+    <text x="0" y="9" font-family="Hind, Arial, sans-serif" font-size="22" font-weight="700" fill="#C98A2B" text-anchor="middle">A</text>
+  </g>
+  <rect x="46" y="286" width="308" height="36" rx="18" fill="#C98A2B"/>
+  <text x="200" y="311" font-family="Hind, Arial, sans-serif" font-size="20" font-weight="700" fill="#FFFFFF" text-anchor="middle">MULTIVITAMIN (30)</text>
+</svg>

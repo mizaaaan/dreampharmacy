@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400" role="img" aria-labelledby="t">
+  <title id="t">Baby diapers</title>
+  <rect width="400" height="400" fill="#E4F4F2"/>
+  <circle cx="200" cy="192" r="146" fill="#CDEAE6"/>
+  <g transform="rotate(-12 200 200)">
+    <path d="M92 118h216c14 0 24 12 22 26l-12 78c-3 20-20 34-40 34H122c-20 0-37-14-40-34l-12-78c-2-14 8-26 22-26z" fill="#FFFFFF" stroke="#33363F" stroke-width="5"/>
+    <path d="M100 148h200l-8 52c-2 14-14 24-28 24H136c-14 0-26-10-28-24z" fill="#2CA89C" opacity="0.18"/>
+    <path d="M92 118h216c14 0 24 12 22 26l-12 78c-3 20-20 34-40 34H122c-20 0-37-14-40-34l-12-78c-2-14 8-26 22-26z" fill="none" stroke="#33363F" stroke-width="5"/>
+    <rect x="150" y="98" width="100" height="34" rx="16" fill="#2CA89C"/>
+    <g stroke="#2CA89C" stroke-width="5" stroke-linecap="round" fill="none">
+      <path d="M150 118h100"/>
+    </g>
+  </g>
+  <rect x="74" y="286" width="252" height="36" rx="18" fill="#2CA89C"/>
+  <text x="200" y="311" font-family="Hind, Arial, sans-serif" font-size="20" font-weight="700" fill="#FFFFFF" text-anchor="middle">BABY DIAPERS (M)</text>
+</svg>
