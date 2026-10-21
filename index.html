@@ -104,6 +104,7 @@
   @media(min-width:900px){
     .main-nav{ display:flex; }
     .hamburger{ display:none; }
+    .mobile-nav, .mobile-nav.open{ display:none; }
   }
 
   /* ---------- Hero ---------- */
@@ -140,6 +141,7 @@
 
   /* ---------- Section shell ---------- */
   section{ padding:52px 0; opacity:1; }
+  section[id], footer[id]{ scroll-margin-top:84px; }
   .reveal{ opacity:0; transform:translateY(16px); transition:opacity .5s ease, transform .5s ease; }
   .reveal.in-view{ opacity:1; transform:none; }
   .section-head{ margin-bottom:28px; max-width:60ch; }
@@ -201,8 +203,8 @@
   /* ---------- Cart drawer ---------- */
   .overlay{ position:fixed; inset:0; background:rgba(51,54,63,0.45); opacity:0; pointer-events:none; transition:opacity .3s ease; z-index:49; }
   .overlay.open{ opacity:1; pointer-events:auto; }
-  .cart-drawer{ position:fixed; top:0; right:0; height:100%; width:100%; max-width:400px; background:#fff; z-index:50; transform:translateX(105%); transition:transform .35s ease; display:flex; flex-direction:column; box-shadow:-14px 0 30px rgba(0,0,0,0.18); }
-  .cart-drawer.open{ transform:translateX(0); }
+  .cart-drawer{ position:fixed; top:0; right:0; height:100%; width:100%; max-width:400px; background:#fff; z-index:50; transform:translateX(105%); visibility:hidden; transition:transform .35s ease, visibility 0s linear .35s; display:flex; flex-direction:column; box-shadow:-14px 0 30px rgba(0,0,0,0.18); }
+  .cart-drawer.open{ transform:translateX(0); visibility:visible; transition:transform .35s ease, visibility 0s; }
   .cart-drawer::before{ content:''; position:absolute; top:0; bottom:0; left:0; width:0; border-left:3px dashed var(--line); }
   .chit-head{ padding:18px 20px; border-bottom:2px dashed var(--line); display:flex; align-items:center; justify-content:space-between; }
   .chit-head h2{ font-size:19px; }
@@ -473,6 +475,7 @@ const I18N = {
     subtotal:'Subtotal', rx_note:'Ordering a prescription item? Please also send a photo of your prescription on WhatsApp.',
     cod_toggle:'Cash on Delivery — fill delivery details',
     cod_name:'Full name', cod_phone:'Phone number', cod_address:'Delivery address', cod_note:'Order note (optional)',
+    cod_required:'Please fill in this field before confirming your order.',
     cod_submit:'Confirm Cash on Delivery order', cod_disclaimer:"We'll message you on WhatsApp to confirm your order and delivery time.",
     btn_whatsapp:'Send Order on WhatsApp', btn_call:'Call to Order',
     toast_empty:'Add an item to your chit first.', toast_whatsapp:'Opening WhatsApp…', toast_cod:'Opening WhatsApp to confirm your order…', toast_added:'Added to your chit.',
@@ -502,6 +505,7 @@ const I18N = {
     subtotal:'সাবটোটাল', rx_note:'প্রেসক্রিপশনের পণ্য অর্ডার করছেন? দয়া করে হোয়াটসঅ্যাপে প্রেসক্রিপশনের ছবিও পাঠান।',
     cod_toggle:'ক্যাশ অন ডেলিভারি — ডেলিভারির তথ্য দিন',
     cod_name:'পূর্ণ নাম', cod_phone:'ফোন নম্বর', cod_address:'ডেলিভারি ঠিকানা', cod_note:'অর্ডার নোট (ঐচ্ছিক)',
+    cod_required:'অর্ডার নিশ্চিত করার আগে দয়া করে ঘরটি পূরণ করুন।',
     cod_submit:'ক্যাশ অন ডেলিভারি অর্ডার নিশ্চিত করুন', cod_disclaimer:'আপনার অর্ডার ও ডেলিভারির সময় নিশ্চিত করতে আমরা হোয়াটসঅ্যাপে বার্তা পাঠাবো।',
     btn_whatsapp:'হোয়াটসঅ্যাপে অর্ডার পাঠান', btn_call:'কল করে অর্ডার করুন',
     toast_empty:'প্রথমে আপনার চিটে একটি পণ্য যোগ করুন।', toast_whatsapp:'হোয়াটসঅ্যাপ খোলা হচ্ছে…', toast_cod:'অর্ডার নিশ্চিত করতে হোয়াটসঅ্যাপ খোলা হচ্ছে…', toast_added:'আপনার চিটে যোগ হয়েছে।',
@@ -516,7 +520,8 @@ const I18N = {
   }
 };
 
-const state = { lang:'en', activeCat:'all', cart:{}, orderNo: 'DP-' + Math.floor(1000+Math.random()*9000) };
+function newOrderNo(){ return 'DP-' + Math.floor(1000+Math.random()*9000); }
+const state = { lang:'en', activeCat:'all', cart:{}, orderNo: newOrderNo() };
 const codState = { open:false, name:'', phone:'', address:'', note:'' };
 let lastFocused = null;
 const CART_KEY = 'dp_cart';
@@ -730,10 +735,10 @@ function renderCart(){
     codState.open = !codState.open;
     codForm.classList.toggle('open', codState.open);
   });
-  ['codName','codPhone','codAddress','codNote'].forEach(id=>{
-    const el = document.getElementById(id);
-    el.value = codState[id] || '';
-    el.addEventListener('input', ()=>{ codState[id] = el.value; saveCod(); });
+  [['codName','name'],['codPhone','phone'],['codAddress','address'],['codNote','note']].forEach(([elId,key])=>{
+    const el = document.getElementById(elId);
+    el.value = codState[key] || '';
+    el.addEventListener('input', ()=>{ codState[key] = el.value; saveCod(); });
   });
   codForm.classList.toggle('open', codState.open);
   codForm.addEventListener('submit', e=>{
@@ -744,6 +749,15 @@ function renderCart(){
       address: codState.address.trim(),
       note: codState.note.trim()
     };
+    const missing = [['codName','name'],['codPhone','phone'],['codAddress','address']]
+      .find(([,key])=> !customer[key]);
+    if(missing){
+      const el = document.getElementById(missing[0]);
+      el.setCustomValidity(t('cod_required'));
+      el.reportValidity();
+      el.addEventListener('input', ()=> el.setCustomValidity(''), {once:true});
+      return;
+    }
     sendOrder(customer);
   });
 }
@@ -771,7 +785,7 @@ function sendOrder(customer){
   const opened = window.open(`https://wa.me/${CONTACT.whatsapp}?text=${encodeURIComponent(msg)}`, '_blank');
   if(opened){
     state.cart = {};
-    saveCart();
+    state.orderNo = newOrderNo();
     renderCart();
     updateCartCount();
   }
@@ -845,7 +859,14 @@ document.addEventListener('keydown', e=>{
 const drawerEl = document.getElementById('cartDrawer');
 drawerEl.addEventListener('keydown', e=>{
   if(e.key!=='Tab' || !drawerEl.classList.contains('open')) return;
-  const items = drawerEl.querySelectorAll('button:not(:disabled), a, input, textarea, select, [tabindex]:not([tabindex="-1"])');
+  const items = [...drawerEl.querySelectorAll('button:not(:disabled), a, input, textarea, select, [tabindex]:not([tabindex="-1"])')]
+    .filter(el=>{
+      for(let node = el; node && node !== drawerEl.parentElement; node = node.parentElement){
+        const style = window.getComputedStyle(node);
+        if(style.display === 'none' || style.visibility === 'hidden') return false;
+      }
+      return true;
+    });
   if(!items.length) return;
   const first = items[0], last = items[items.length-1];
   if(e.shiftKey && document.activeElement===first){ e.preventDefault(); last.focus(); }
