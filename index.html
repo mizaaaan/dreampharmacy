@@ -427,21 +427,21 @@
 <script>
 /* ============ EDIT YOUR PRODUCTS HERE ============ */
 const PRODUCTS = [
-  {id:1, cat:'medicine', rx:false, nameEn:'Napa 500mg', nameBn:'নাপা ৫০০ মি.গ্রা.', descEn:'Paracetamol tablet, strip of 10 — fever & pain relief.', descBn:'প্যারাসিটামল ট্যাবলেট, ১০ পিসের স্ট্রিপ — জ্বর ও ব্যথা উপশমে।', price:12},
-  {id:2, cat:'medicine', rx:true, nameEn:'Seclo 20mg', nameBn:'সেক্লো ২০ মি.গ্রা.', descEn:'Omeprazole capsule, strip of 14 — for acidity & ulcer.', descBn:'ওমিপ্রাজল ক্যাপসুল, ১৪ পিসের স্ট্রিপ — গ্যাস্ট্রিক ও আলসারে।', price:84},
-  {id:3, cat:'medicine', rx:false, nameEn:'Fexo 120mg', nameBn:'ফেক্সো ১২০ মি.গ্রা.', descEn:'Fexofenadine tablet, strip of 10 — allergy relief.', descBn:'ফেক্সোফেনাডিন ট্যাবলেট, ১০ পিসের স্ট্রিপ — এলার্জিতে।', price:80},
-  {id:4, cat:'medicine', rx:false, nameEn:'ORSaline-N', nameBn:'ওরস্যালাইন-এন', descEn:'Oral rehydration salt, pack of 1 — for dehydration.', descBn:'ওরাল রিহাইড্রেশন স্যালাইন — ডিহাইড্রেশনে।', price:8},
-  {id:5, cat:'baby', rx:false, nameEn:'Baby Diapers (M, 20pcs)', nameBn:'বেবি ডায়াপার (মিডিয়াম, ২০ পিস)', descEn:'Soft, leak-proof diapers for daily use.', descBn:'নরম, লিক-প্রুফ ডায়াপার, দৈনন্দিন ব্যবহারের জন্য।', price:450},
-  {id:6, cat:'baby', rx:false, nameEn:'Baby Lotion 200ml', nameBn:'বেবি লোশন ২০০ মি.লি.', descEn:'Gentle moisturising lotion for sensitive skin.', descBn:'সংবেদনশীল ত্বকের জন্য কোমল ময়েশ্চারাইজিং লোশন।', price:320},
-  {id:7, cat:'baby', rx:false, nameEn:'Gripe Water 60ml', nameBn:'গ্রাইপ ওয়াটার ৬০ মি.লি.', descEn:'Relief from infant colic and gas.', descBn:'শিশুর পেটের গ্যাস ও কোলিক উপশমে।', price:90},
-  {id:8, cat:'personal', rx:false, nameEn:'Hand Sanitizer 200ml', nameBn:'হ্যান্ড স্যানিটাইজার ২০০ মি.লি.', descEn:'Kills 99.9% germs, alcohol based.', descBn:'৯৯.৯% জীবাণু ধ্বংস করে, অ্যালকোহলযুক্ত।', price:120},
-  {id:9, cat:'personal', rx:false, nameEn:'Surgical Face Mask (Box of 50)', nameBn:'সার্জিক্যাল ফেস মাস্ক (৫০ পিসের বক্স)', descEn:'3-ply protective mask, box of 50.', descBn:'৩-প্লাই সুরক্ষা মাস্ক, ৫০ পিসের বক্স।', price:250},
-  {id:10, cat:'personal', rx:false, nameEn:'Antiseptic Liquid 100ml', nameBn:'অ্যান্টিসেপটিক লিকুইড ১০০ মি.লি.', descEn:'For cuts, wounds and general hygiene.', descBn:'কাটা-ছেঁড়া ও সাধারণ স্বাস্থ্যবিধির জন্য।', price:75},
-  {id:11, cat:'devices', rx:false, nameEn:'Digital Thermometer', nameBn:'ডিজিটাল থার্মোমিটার', descEn:'Fast, accurate temperature reading.', descBn:'দ্রুত ও নির্ভুল তাপমাত্রা পরিমাপ।', price:350},
-  {id:12, cat:'devices', rx:false, nameEn:'Digital Blood Pressure Monitor', nameBn:'ডিজিটাল ব্লাড প্রেসার মনিটর', descEn:'Automatic upper-arm BP monitor.', descBn:'স্বয়ংক্রিয় আপার-আর্ম বিপি মনিটর।', price:2200},
-  {id:13, cat:'devices', rx:false, nameEn:'Glucometer + 10 Strips', nameBn:'গ্লুকোমিটার + ১০টি স্ট্রিপ', descEn:'Blood glucose monitoring kit.', descBn:'ব্লাড গ্লুকোজ পরিমাপের কিট।', price:1450},
-  {id:14, cat:'wellness', rx:false, nameEn:'Multivitamin Tablets (30pcs)', nameBn:'মাল্টিভিটামিন ট্যাবলেট (৩০ পিস)', descEn:'Daily multivitamin & mineral support.', descBn:'দৈনন্দিন মাল্টিভিটামিন ও মিনারেল সাপোর্ট।', price:280},
-  {id:15, cat:'wellness', rx:false, nameEn:'Protein Supplement 400g', nameBn:'প্রোটিন সাপ্লিমেন্ট ৪০০ গ্রাম', descEn:'Whey protein blend for daily nutrition.', descBn:'দৈনন্দিন পুষ্টির জন্য হুয়ে প্রোটিন ব্লেন্ড।', price:950}
+  {id:1, cat:'medicine', rx:false, img:'assets/products/napa-500mg.svg', nameEn:'Napa 500mg', nameBn:'নাপা ৫০০ মি.গ্রা.', descEn:'Paracetamol tablet, strip of 10 — fever & pain relief.', descBn:'প্যারাসিটামল ট্যাবলেট, ১০ পিসের স্ট্রিপ — জ্বর ও ব্যথা উপশমে।', price:12},
+  {id:2, cat:'medicine', rx:true, img:'assets/products/seclo-20mg.svg', nameEn:'Seclo 20mg', nameBn:'সেক্লো ২০ মি.গ্রা.', descEn:'Omeprazole capsule, strip of 14 — for acidity & ulcer.', descBn:'ওমিপ্রাজল ক্যাপসুল, ১৪ পিসের স্ট্রিপ — গ্যাস্ট্রিক ও আলসারে।', price:84},
+  {id:3, cat:'medicine', rx:false, img:'assets/products/fexo-120mg.svg', nameEn:'Fexo 120mg', nameBn:'ফেক্সো ১২০ মি.গ্রা.', descEn:'Fexofenadine tablet, strip of 10 — allergy relief.', descBn:'ফেক্সোফেনাডিন ট্যাবলেট, ১০ পিসের স্ট্রিপ — এলার্জিতে।', price:80},
+  {id:4, cat:'medicine', rx:false, img:'assets/products/orsaline-n.svg', nameEn:'ORSaline-N', nameBn:'ওরস্যালাইন-এন', descEn:'Oral rehydration salt, pack of 1 — for dehydration.', descBn:'ওরাল রিহাইড্রেশন স্যালাইন — ডিহাইড্রেশনে।', price:8},
+  {id:5, cat:'baby', rx:false, img:'assets/products/baby-diapers.svg', nameEn:'Baby Diapers (M, 20pcs)', nameBn:'বেবি ডায়াপার (মিডিয়াম, ২০ পিস)', descEn:'Soft, leak-proof diapers for daily use.', descBn:'নরম, লিক-প্রুফ ডায়াপার, দৈনন্দিন ব্যবহারের জন্য।', price:450},
+  {id:6, cat:'baby', rx:false, img:'assets/products/baby-lotion.svg', nameEn:'Baby Lotion 200ml', nameBn:'বেবি লোশন ২০০ মি.লি.', descEn:'Gentle moisturising lotion for sensitive skin.', descBn:'সংবেদনশীল ত্বকের জন্য কোমল ময়েশ্চারাইজিং লোশন।', price:320},
+  {id:7, cat:'baby', rx:false, img:'assets/products/gripe-water.svg', nameEn:'Gripe Water 60ml', nameBn:'গ্রাইপ ওয়াটার ৬০ মি.লি.', descEn:'Relief from infant colic and gas.', descBn:'শিশুর পেটের গ্যাস ও কোলিক উপশমে।', price:90},
+  {id:8, cat:'personal', rx:false, img:'assets/products/hand-sanitizer.svg', nameEn:'Hand Sanitizer 200ml', nameBn:'হ্যান্ড স্যানিটাইজার ২০০ মি.লি.', descEn:'Kills 99.9% germs, alcohol based.', descBn:'৯৯.৯% জীবাণু ধ্বংস করে, অ্যালকোহলযুক্ত।', price:120},
+  {id:9, cat:'personal', rx:false, img:'assets/products/surgical-mask.svg', nameEn:'Surgical Face Mask (Box of 50)', nameBn:'সার্জিক্যাল ফেস মাস্ক (৫০ পিসের বক্স)', descEn:'3-ply protective mask, box of 50.', descBn:'৩-প্লাই সুরক্ষা মাস্ক, ৫০ পিসের বক্স।', price:250},
+  {id:10, cat:'personal', rx:false, img:'assets/products/antiseptic-liquid.svg', nameEn:'Antiseptic Liquid 100ml', nameBn:'অ্যান্টিসেপটিক লিকুইড ১০০ মি.লি.', descEn:'For cuts, wounds and general hygiene.', descBn:'কাটা-ছেঁড়া ও সাধারণ স্বাস্থ্যবিধির জন্য।', price:75},
+  {id:11, cat:'devices', rx:false, img:'assets/products/digital-thermometer.svg', nameEn:'Digital Thermometer', nameBn:'ডিজিটাল থার্মোমিটার', descEn:'Fast, accurate temperature reading.', descBn:'দ্রুত ও নির্ভুল তাপমাত্রা পরিমাপ।', price:350},
+  {id:12, cat:'devices', rx:false, img:'assets/products/blood-pressure-monitor.svg', nameEn:'Digital Blood Pressure Monitor', nameBn:'ডিজিটাল ব্লাড প্রেসার মনিটর', descEn:'Automatic upper-arm BP monitor.', descBn:'স্বয়ংক্রিয় আপার-আর্ম বিপি মনিটর।', price:2200},
+  {id:13, cat:'devices', rx:false, img:'assets/products/glucometer.svg', nameEn:'Glucometer + 10 Strips', nameBn:'গ্লুকোমিটার + ১০টি স্ট্রিপ', descEn:'Blood glucose monitoring kit.', descBn:'ব্লাড গ্লুকোজ পরিমাপের কিট।', price:1450},
+  {id:14, cat:'wellness', rx:false, img:'assets/products/multivitamin.svg', nameEn:'Multivitamin Tablets (30pcs)', nameBn:'মাল্টিভিটামিন ট্যাবলেট (৩০ পিস)', descEn:'Daily multivitamin & mineral support.', descBn:'দৈনন্দিন মাল্টিভিটামিন ও মিনারেল সাপোর্ট।', price:280},
+  {id:15, cat:'wellness', rx:false, img:'assets/products/protein-supplement.svg', nameEn:'Protein Supplement 400g', nameBn:'প্রোটিন সাপ্লিমেন্ট ৪০০ গ্রাম', descEn:'Whey protein blend for daily nutrition.', descBn:'দৈনন্দিন পুষ্টির জন্য হুয়ে প্রোটিন ব্লেন্ড।', price:950}
 ];
 const CATEGORIES = [
   {key:'all', en:'All', bn:'সকল', color:'var(--ink)'},
